@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tekst"
+        android:id="@+id/wyglad_zadania"
+        android:textSize="20dp"
+        android:gravity="center_vertical" />
+
+    <Button
+        android:layout_below="@id/wyglad_zadania"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edytuj"
+        android:id="@+id/dodajButton"
+        android:background="#389de6"
+        android:layout_weight="0.50"
+        android:layout_marginStart="236dp"
+        android:layout_marginTop="46dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Usuń"
+        android:id="@+id/usunButton"
+        android:onClick="usunButtonClick"
+        android:background="#d82525"
+        android:layout_weight="0.50"
+        android:layout_below="@+id/dodajButton"
+        android:layout_alignStart="@+id/dodajButton" />
+
+
+</RelativeLayout>
